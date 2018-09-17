@@ -1,6 +1,6 @@
 # perceptron - naive implementation
 
-this is an homework, the goal is to do a naive implementation of a perceptron
+this is school work, the goal is to do a naive implementation of a perceptron
 
 ## how to run the program ?
 
