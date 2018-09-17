@@ -1,0 +1,6 @@
+boxdev/
+.vscode/
+__pycache__
+
+#testCats.h5
+#trainCats.h5
