@@ -13,7 +13,6 @@ class LogisticRegression():
 
     def __init__(self, input_shape, loss_function='log', activation_function='sigmoid', d_part=0):
         
-        # code from towarddatascience
         self.input_shape = input_shape
 
         # initializing w
@@ -126,7 +125,7 @@ class LogisticRegression():
         gradient = y_predict - y_truth
 
         gradient_weights = input_data * gradient
-
+        # code from toward datascience
         self.weights = self.weights - (learning_rate * gradient_weights)
 
         self.bias = self.bias - (learning_rate * gradient)

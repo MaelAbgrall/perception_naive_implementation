@@ -32,8 +32,8 @@ input_shape = train_flat.shape[0]
 log_regression = log_reg.LogisticRegression(input_shape)
 
 # training our model
-epochs = 500
-learning_rate = 0.0001 
+epochs = 300
+learning_rate = 0.001 
 # if the probability is below 0.3 or above 0.7, the sample is "correctly predicted"
 recognition_threshold = 0.3
 
