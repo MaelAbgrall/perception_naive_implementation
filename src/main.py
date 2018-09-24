@@ -32,8 +32,8 @@ input_shape = train_flat.shape[0]
 log_regression = log_reg.LogisticRegression(input_shape)
 
 # training our model
-epochs = 300
-learning_rate = 0.001 
+epochs = 500
+learning_rate = 0.0001 
 # if the probability is below 0.3 or above 0.7, the sample is "correctly predicted"
 recognition_threshold = 0.3
 
@@ -41,12 +41,17 @@ history = log_regression.train(train_flat, y_train, validation_flat, y_validatio
 
 
 # and now let's see the result
+
+print("last cost:", history[2][-1])
+
 plt.plot(history[2])
 plt.title('Cost evolution')
 plt.ylabel('Cost')
 plt.xlabel('Iterations')
 plt.show()
 
+print("last validation:", history[1][-1])
+print("last train:", history[0][-1])
 plt.plot(history[1], label='validation accuracy')
 plt.plot(history[0], label='train accuracy')
 plt.title('accuracy evolution')

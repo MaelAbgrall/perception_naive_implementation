@@ -1,5 +1,5 @@
 # change this line according to your correct python path
-python35 -m venv boxpython
+python3 -m venv boxpython
 
 # installing dependencies
 source boxpython/bin/activate

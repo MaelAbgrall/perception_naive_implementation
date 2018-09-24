@@ -74,6 +74,9 @@ class LogisticRegression():
                     threshold_output = 0
                 if(y_predict >= 1 - recognition_threshold): # >= 0.7 --> 1
                     threshold_output = 1
+                
+                #if(y_predict > recognition_threshold and y_predict < 1- recognition_threshold):
+                #    print('output', y_predict)
 
                 if(threshold_output == y_train[0, position]):
                     train_correct += 1

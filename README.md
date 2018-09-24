@@ -10,7 +10,7 @@ The program was developed with python 3.5
 
 #### Linux
 
-check if your python version is 3.5 and the registered path (how you call python) is python35.
+check if your python version is 3.5 and the registered path (how you call python) is python3.
 
 if not, change install_linux.sh with the appropriate python version
 
